@@ -1,6 +1,22 @@
+nav{
+  height: 50px;
+  border-bottom: solid 4px #FF6600;
+}
+
+.logo-container{
+  height:50px;
+  padding: 8px;
+}
+.logo-container img{
+  height: 100%;
+  margin: auto;
+}
+.team-container{
+  background-color: #f7f7f7;
+}
+
 .wrapper {
   padding-top: 50px;
-  background: #ECEFF1;
   height: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -8,4 +24,27 @@
   justify-content: space-around;
   align-content: flex-start;
   overflow: auto;
+}
+
+.overview h3{
+  padding: 2rem;
+  text-align: center;
+}
+
+.overview p{
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer{
+  border-top: solid 0.5px #ccc;
+  height: 45px;
+  background-color: #ffffff;
+  color: #aaa;
+}
+
+.footer-text{
+  float:right;
+  height:45px;
+  padding: 15px;
 }
