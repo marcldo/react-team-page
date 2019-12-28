@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button/index"
 import "./style.css";
 
 function Card(props) {
@@ -19,21 +20,9 @@ function Card(props) {
         <p>
           {props.desc}
         </p>
-        {/* <ul>
-          <li>
-            <strong>Name:</strong> {props.name}
-          </li>
-          <li>
-            <strong>Occupation:</strong> {props.occupation}
-          </li>
-          <li>
-            <strong>desc:</strong> {props.desc}
-          </li>
-        </ul> */}
+        <Button btnText={"+ Read More"}>Read More</Button>
       </div>
-      {/* <span className="remove">
-        𝘅
-      </span> */}
+
     </div>
   );
 }

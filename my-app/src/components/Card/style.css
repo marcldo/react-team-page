@@ -20,38 +20,68 @@ width: 100%;
   left: 0px;
   height: 85%;
   width: 35%;
-
   min-width: 200px;
   overflow: hidden;
   text-align: center;
   background:#6CADDC;
-margin: 20px;
+  margin: 20px;
 }
 
 
 .card > .content {
   position: absolute;
+  height: 85%;
   width: 55%;
   right: 0px;
   margin: 20px;
-  padding-left: 15px;
+  padding-left: 5px;
   font-size: 13px;
 }
 
 .card > .content hr {
  margin:0.5rem 0;
-  width: 250px;
+  width: 75%;
+  border: solid 0.5px #FF6600;
 }
 
-.card > .remove {
-  color: #ff1744;
-  font-size: 48px;
-  position: absolute;
-  top: -20px;
-  right: 5px;
-  cursor: pointer;
+.card > .content button {
+  position:absolute;
+  bottom:0;
+  left:0;
 }
 
-.card > .remove:hover {
-  color: #d50000;
-} 
+.card > .content h3 {
+color: #FF6600;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .card {
+  height: 500px;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0;
+
+  }
+  .card > .img-container {
+    position: static;
+    margin: 20px auto 5px;
+    height: 200px;
+    width: 50%;
+    min-width: 170px;
+  }
+
+  .card > .content {
+    position: static;
+    margin: 10px auto;
+    height: 220px;
+    width: 80%;
+  }
+  .card > .content h3{
+    font-size: 25px;
+  }
+  .card > .content button {
+    position: static;;
+    margin: 5px auto;
+  }
+}
